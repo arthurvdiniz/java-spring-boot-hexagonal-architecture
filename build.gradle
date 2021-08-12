@@ -31,15 +31,14 @@ dependencies {
 }
 
 jacocoTestReport {
-	dependsOn test
 	reports {
 		xml.enabled true
 	}
 }
 
 test {
-	finalizedBy jacocoTestReport
 	useJUnitPlatform()
+	finalizedBy jacocoTestReport
 }
 
 sonarqube {
@@ -47,6 +46,7 @@ sonarqube {
 		property "sonar.projectKey", "arthurvdiniz_java-spring-hexagonal-architecture"
 		property "sonar.organization", "arthurvdiniz"
 		property "sonar.host.url", "https://sonarcloud.io"
+		property "sonar.java.coveragePlugin", "jacoco"
+		property "sonar.coverage.jacoco.xmlReportPaths", "build/reports/jacoco/test/jacocoTestReport.xml"
 	}
-	dependsOn test
 }
