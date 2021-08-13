@@ -13,10 +13,10 @@ import static org.mockito.Mockito.*;
 
 class TodoServiceTest {
 
-  TodoService todoService;
+  private TodoService todoService;
 
   @Mock
-  TodoRepository todoRepository;
+  private TodoRepository todoRepository;
 
   @BeforeEach
   public void setup() {

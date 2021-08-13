@@ -1,4 +1,4 @@
-package com.arthurvdiniz.hexagonalarchitecture.adapters.configuration;
+package com.arthurvdiniz.hexagonalarchitecture.adapters.config;
 
 import com.arthurvdiniz.hexagonalarchitecture.HexagonalArchitectureApplication;
 import com.arthurvdiniz.hexagonalarchitecture.application.port.TodoRepository;

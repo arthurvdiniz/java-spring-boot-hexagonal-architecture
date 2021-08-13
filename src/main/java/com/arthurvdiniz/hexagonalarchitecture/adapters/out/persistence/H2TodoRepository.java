@@ -15,6 +15,6 @@ public class H2TodoRepository implements TodoRepository {
 
   @Override
   public Todo save(Todo todo) {
-    return null;
+    return todoRepository.save(todo);
   }
 }

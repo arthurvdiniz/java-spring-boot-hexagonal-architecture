@@ -13,7 +13,7 @@ import static org.mockito.Mockito.when;
 class TodoRepositoryTest {
 
   @Mock
-  TodoRepository todoRepository;
+  private TodoRepository todoRepository;
 
   @BeforeEach
   public void getMocks() {
